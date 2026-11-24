@@ -11,7 +11,7 @@
 }
 
 
-/* 기본 설정 */
+
 * {
     box-sizing: border-box;
 }
@@ -41,7 +41,6 @@ footer {
 }
 
 
-/* Header */
 .top {
     display: flex;
     justify-content: space-between;
@@ -82,7 +81,7 @@ nav a:hover {
 }
 
 
-/* Hero */
+
 .hero {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -105,7 +104,7 @@ nav a:hover {
 }
 
 
-/* 통계 */
+
 #out {
     color: var(--text);
     background: rgba(0, 0, 0, 0.2);
@@ -115,7 +114,7 @@ nav a:hover {
 }
 
 
-/* Toolbar */
+
 .toolbar {
     display: flex;
     align-items: center;
@@ -145,7 +144,6 @@ nav a:hover {
 }
 
 
-/* Section */
 section {
     margin-bottom: 36px;
 }
@@ -155,7 +153,7 @@ section > h2 {
 }
 
 
-/* Movie Board */
+
 .board {
     display: grid;
     grid-template-columns: 1fr;
@@ -163,7 +161,7 @@ section > h2 {
 }
 
 
-/* Movie Card */
+
 .card {
     border-radius: 12px;
     overflow: hidden;
@@ -203,7 +201,7 @@ section > h2 {
 }
 
 
-/* Rating Badge */
+
 .badge {
     position: absolute;
     top: 12px;
@@ -222,7 +220,7 @@ section > h2 {
 }
 
 
-/* Box Office Rank */
+
 .rank {
     position: absolute;
     top: 12px;
@@ -260,26 +258,7 @@ section > h2 {
 }
 
 
-/* Like Button */
-.like {
-    border: none;
-    background: none;
-    font-size: 1.5rem;
-    color: #bbb;
-    cursor: pointer;
-    transition: color 0.2s, transform 0.2s;
-}
 
-.like:hover {
-    transform: scale(1.2);
-}
-
-.like.liked {
-    color: crimson;
-}
-
-
-/* Empty Search Result */
 .state-empty {
     display: none;
     color: #fff;
@@ -294,7 +273,7 @@ section > h2 {
 }
 
 
-/* Animation */
+
 @keyframes pulse {
     0%,
     100% {
@@ -314,7 +293,7 @@ section > h2 {
 }
 
 
-/* Card Animation Delay */
+
 .card:nth-child(1) {
     animation-delay: 0s;
 }
@@ -340,7 +319,7 @@ section > h2 {
 }
 
 
-/* Detail Page */
+
 .detail {
     display: grid;
     grid-template-columns: 1fr;
@@ -399,7 +378,7 @@ body.is-loading .card {
 }
 
 
-/* Responsive */
+
 @media (min-width: 600px) {
     nav ul {
         flex-direction: row;
@@ -430,7 +409,6 @@ body.is-loading .card {
 }
 
 
-/* Dark Mode */
 @media (prefers-color-scheme: dark) {
     .card {
         background: #1a202c;
@@ -441,4 +419,21 @@ body.is-loading .card {
         background: rgba(20, 25, 35, 0.95);
         color: #fff;
     }
+}
+
+.like {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.like:hover {
+    transform: scale(1.2);
+}
+
+.like.liked {
+    color: crimson;
 }
